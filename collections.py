@@ -120,3 +120,22 @@ user = {
 print(user) # This prints the dictionary
 print(user["name"]) # This prints the value of the item with the key "name"
 print(user["contact"]["phone"]) # This prints the value of the item with the key "phone" in the nested dictionary
+
+# List + Dictionary ⭐⭐⭐
+users = [
+    {
+        "id": 1,
+        "name": "Sayeed",
+        "email": "sayeed@example.com"
+    },
+    {
+        "id": 2,
+        "name": "Rahim",
+        "email": "rahim@example.com"
+    }
+]
+print(users);
+print(users[0]["name"]);
+print(users[1]["email"]);
+
+
