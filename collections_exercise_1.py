@@ -180,3 +180,59 @@ response = {
     ]
 }
 
+print(response["status"])
+print(response["message"])
+print(response["data"][0]["name"])
+print(response["data"][1]["email"])
+for user in response["data"]:
+    print(f"{user['id']} - {user['name']} - {user['email']}")
+
+
+# One challenge for you 🚀
+
+# Try this without looking back:
+# users = [
+#     {
+#         "id": 1,
+#         "name": "Sayeed",
+#         "is_active": True
+#     },
+#     {
+#         "id": 2,
+#         "name": "Rahim",
+#         "is_active": False
+#     },
+#     {
+#         "id": 3,
+#         "name": "Karim",
+#         "is_active": True
+#     }
+# ]
+
+# Print only active users.
+
+# Expected:
+# Sayeed
+# Karim
+
+users = [
+    {
+        "id": 1,
+        "name": "Sayeed",
+        "is_active": True
+    },
+    {
+        "id": 2,
+        "name": "Rahim",
+        "is_active": False
+    },
+    {
+        "id": 3,
+        "name": "Karim",
+        "is_active": True
+    }
+]
+
+for user in users:
+    if user["is_active"] == True:
+        print(user["name"])
