@@ -139,3 +139,80 @@ print(users[0]["name"]);
 print(users[1]["email"]);
 
 
+for user in users:
+    print(f"ID: {user['id']}, Name: {user['name']}, Email: {user['email']}")
+
+
+# Tuple: A tuple looks similar to a list 
+#  List = []
+#  Tuple = ()
+#  List can be modified, while Tuple cannot be modified
+coordinates = (23.8103, 90.4125) # This creates a tuple with two items
+print(coordinates) # This prints the tuple
+print(coordinates[0]) # This prints the first item of the tuple
+print(coordinates[1]) # This prints the second item of the tuple
+
+# Set: A set is a collection of unique elements
+numbers = {1, 2, 3, 4}
+print(numbers) # This prints the set
+
+numbers = {1, 2, 2, 3, 3, 4, 5}
+print(numbers) # This prints the set
+
+# Sets are useful when we need unique values.
+roles = {"admin", "manager", "admin", "user"}
+print(roles) # This prints the set
+
+# List vs Tuple vs Set vs Dictionary
+
+# List
+# ↓
+# Ordered collection
+# Can contain duplicates
+# Mutable
+
+# Tuple
+# ↓
+# Ordered collection
+# Can contain duplicates
+# Immutable
+
+# Set
+# ↓
+# Unique values
+# No duplicates
+
+# Dictionary
+# ↓
+# Key → Value
+
+# Example:
+# names = ["Sayeed", "Rahim", "Sayeed"]
+
+# coordinates = (23.81, 90.41)
+
+# roles = {"admin", "user", "admin"}
+
+# user = {
+#     "id": 1,
+#     "name": "Sayeed"
+# }
+
+# 🧠 A very important backend structure
+response = {
+    "status": "success",
+    "message": "Users fetched successfully",
+    "data": [
+        {
+            "id": 1,
+            "name": "Sayeed",
+            "email": "sayeed@example.com"
+        },
+        {
+            "id": 2,
+            "name": "Rahim",
+            "email": "rahim@example.com"
+        }
+    ]
+}
+print(response["data"][0]["name"])
